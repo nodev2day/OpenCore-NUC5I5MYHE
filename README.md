@@ -4,6 +4,7 @@ Getting OpenCore working on Intel NUC5I5MYHE
 ## Hardware Details:
 
 * Intel NUC5I5MYHE Intel Core i5-5300U 2.3 Ghz processor (Broadwell)
+* Firmware upadted to the latest from the manufacturer (MYi50058 dated May 2020)
 
 * 16 GB 1600 MHz DDR3 (2 Memory modules, slots full) Crucial CT102464BF160B.C16
 
@@ -19,6 +20,7 @@ Getting OpenCore working on Intel NUC5I5MYHE
 * Wi-Fi 802.11ac Broadcom BCM43602 
 
 * Bluetooth GMYLE Bluetooth 4.0 Broadcom Chipset 20702A3 Dongle Adapter USB
+
 
 
 ## Guides Used
@@ -41,6 +43,8 @@ Used gibMacOS to get Catalina recovery image (newest available from the catalog)
 I did not make my own ACPI files like in the Chris Titus video and guide, I just grabbed the pre-compiled ones linked from the guide for Broadwell Laptop.
 
 iMac16,1 is the SMBios I used for this model.
+
+Do get your ethernet hardware address (from Bios) to fill into the config.plist.  The guide says its optional but I think the correct HW address was needed for ethernet to work.  
 
 First time boot I got "DMG altered" and I went back to re-download Catalina recovery image with gibMacOS instructions, that resolved the problem.
 
